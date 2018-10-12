@@ -24,7 +24,6 @@ async def on_message(message):
         await client.send_message(message.channel,'Pong! Im online, serving fresh Melk!')
     if message.content == '-credits':
         await client.send_message(message.channel,'**Contributors:** `ProLessSkill#7393 - Owner`')
-client.run('NDg2NDg1MzAxMzEzNjY3MDgy.DqJMXg.IZ4bShqdoi7IbMK9DNlrk9RqN2o')
     if message.content.startswith('-DidIDrinkEnoughMelk'):
         randomlist = ['no. you need to drink more!','sure i guess','you did not drink at all.','just a little bit more...',]
         await client.send_message(message.channel,(random.choice(randomlist)))
