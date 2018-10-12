@@ -21,5 +21,5 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content == '-ping':
-        await client.send_message(message.channel,'pooooooooooooooooooooooooooooooooooong.')
+        await client.send_message(message.channel,'Pong! Im online!')
 client.run('NDg2NDg1MzAxMzEzNjY3MDgy.DqId0w.rC5MpzcTSm9gZX42AxIxujHI8HA')
