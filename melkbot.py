@@ -14,7 +14,7 @@ Clientdiscord = discord.Client()
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=Game(name='      '))
+    await bot.change_presence(game=discord.Game(name= str(len(bot.servers)) + " servers", type=3))
     print('Ready :D') 
 
 
