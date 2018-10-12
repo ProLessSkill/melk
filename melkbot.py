@@ -22,4 +22,4 @@ async def on_ready():
 async def on_message(message):
     if message.content == '-ping':
         await client.send_message(message.channel,'pooooooooooooooooooooooooooooooooooong.')
-client.run('NDg2NDg1MzAxMzEzNjY3MDgy.DppcTQ.T4TVwlLRt6S-8VcJ2Vxfqntmil0')
+client.run('NDg2NDg1MzAxMzEzNjY3MDgy.DqId0w.rC5MpzcTSm9gZX42AxIxujHI8HA')
