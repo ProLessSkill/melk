@@ -22,4 +22,12 @@ async def on_ready():
 async def on_message(message):
     if message.content == '-ping':
         await client.send_message(message.channel,'Pong! Im online!')
+        
+        
+@client.event
+async def on_message(message):
+    if message.content.startswith('-react'):
+        msg = await client.send_message(message.channel, 'React with thumbs up or thumbs down.')
+        res = await client.wait_for_reaction(['👍', '👎'], message=msg)
+        await client.send_message(message.channel, '{0.user} reacted with {0.reaction.emoji}!'.format(res))
 client.run('NDg2NDg1MzAxMzEzNjY3MDgy.DqId0w.rC5MpzcTSm9gZX42AxIxujHI8HA')
