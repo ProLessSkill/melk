@@ -34,5 +34,9 @@ async def on_message(message):
     if message.content == '-invite':
         await client.send_message(message.channel,'Hey big bois! Im Melk, your favorite bot. Now invite me to your server to not be like a retard. Im being updated very frequently and with 24/7 uptime. Inv. Link: ')
     if message.content == '-serverping':
-        await client.send_message(message.channel,'❌ Server offline or not responding. ')
+        await client.send_message(message.channel,'❗ Specify a Server! Eg: ```Europe | USA```')
+    if message.content == '-serverping USA':
+        await client.send_message(message.channel,'❌ Server is down, not responding or out of space.')
+    if message.content == '-serverping Europe':
+        await client.send_message(message.channel,'✔️ Server is currently online and working. Note: This is the default server!')
 client.run('NDg2NDg1MzAxMzEzNjY3MDgy.DqJMXg.IZ4bShqdoi7IbMK9DNlrk9RqN2o')
