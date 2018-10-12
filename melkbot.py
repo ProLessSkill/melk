@@ -32,5 +32,7 @@ async def on_message(message):
         em.set_image(url='https://www.google.bg/search?q=nature+images&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiqvbCrnYHeAhUCjywKHffxD8oQ_AUIDigB&biw=1920&bih=938#imgrc=zTqmwGzV3Q_bIM')
         await client.send_message(message.channel, embed=em)
     if message.content == '-invite':
-        await client.send_message(message.channel,'Hey big bois! Im Melk, your favorite bot. Now invite me to your server to not be like a retard. Im being updated very frequently and with 24/7 uptime. Inv. Link: https://discordapp.com/oauth2/authorize?client_id=486485301313667082&scope=bot&permissions=387072')
+        await client.send_message(message.channel,'Hey big bois! Im Melk, your favorite bot. Now invite me to your server to not be like a retard. Im being updated very frequently and with 24/7 uptime. Inv. Link: ')
+    if message.content == '-serverping':
+        await client.send_message(message.channel,'❌ Server offline or not responding. ')
 client.run('NDg2NDg1MzAxMzEzNjY3MDgy.DqJMXg.IZ4bShqdoi7IbMK9DNlrk9RqN2o')
