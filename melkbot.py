@@ -14,14 +14,14 @@ Clientdiscord = discord.Client()
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=Game(name='with Milk :>'))
+    await client.change_presence(game=Game(name='despacito with Melk'))
     print('Ready, Freddy') 
 
 
 @client.event
 async def on_message(message):
     if message.content == '-ping':
-        await client.send_message(message.channel,'Pong! Im online, serving fresh Melk!')
+        await client.send_message(message.channel,'Pong! Im online, playing despacito!')
     if message.content == '-credits':
         await client.send_message(message.channel,'**Contributors:** `ProLessSkill#7393 - Owner`')
     if message.content.startswith('-DidIDrinkEnoughMelk'):
